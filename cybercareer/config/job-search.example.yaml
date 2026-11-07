@@ -1,0 +1,58 @@
+# Copy to job-search.local.yaml and edit locally.
+# Do not commit the local file; it is listed in .gitignore.
+
+search:
+  country: United States
+  remote_priority: true
+  local:
+    enabled: true
+    postal_code: "26105"
+    radius_miles: 100
+  sources:
+    - employer_career_pages
+    - LinkedIn
+    - Indeed
+    - Dice
+  lookback_days: 14
+  daily_result_limit: 40
+
+roles:
+  include:
+    - Senior Penetration Tester
+    - Penetration Testing Lead
+    - Offensive Security Engineer
+    - Red Team Operator
+    - Application Security Engineer
+    - Security Researcher
+  exclude:
+    - entry level
+    - unpaid
+    - commission only
+
+preferences:
+  work_arrangements:
+    - remote
+    - hybrid
+    - onsite
+  salary_floor: null
+  employment_types:
+    - full_time
+
+matching:
+  require_explicit_evidence: true
+  do_not_infer_missing_qualifications: true
+  prioritize:
+    - penetration testing
+    - web application security
+    - infrastructure security
+    - red team operations
+    - vulnerability research
+    - exploit validation
+    - security reporting
+
+workflow:
+  prepare_resume_drafts: true
+  prepare_cover_letter_drafts: true
+  prepare_application_answers: true
+  submit_applications: false
+  require_human_approval: true
